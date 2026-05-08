@@ -1,0 +1,27 @@
+# Core dependencies
+pyyaml>=6.0
+cryptography>=41.0.0
+croniter>=1.4.0
+
+# Cloud storage backends (install as needed)
+boto3>=1.28.0          # AWS S3
+google-cloud-storage>=2.10.0  # Google Cloud Storage
+azure-storage-blob>=12.17.0   # Azure Blob Storage
+
+# Optional: SFTP support
+paramiko>=3.3.0
+
+# Optional: Webhook notifications
+requests>=2.31.0
+
+# Development dependencies
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.7.0
+flake8>=6.1.0
+mypy>=1.5.0
+isort>=5.12.0
+
+# Type stubs
+boto3-stubs[s3]>=1.28.0
+types-requests>=2.31.0
