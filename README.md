@@ -299,6 +299,20 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 <!-- showcase:start -->
 
+## Research Report
+
+**Encrypted Off-Site Backup with Verifiable Recovery**
+
+_A study of the 3-2-1 backup pattern instantiated with AES-256-GCM, content-addressable storage, and integrity verification_
+
+A self-contained research-grade report (Abstract, Introduction, Research Problem, Research Questions, Literature Review, Research Method, Data Description, Analysis, Discussion, Conclusion, Future Work, References) is published with this repository.
+
+[Read the full report (PDF)](docs/research_report.pdf)
+
+**Keywords:** backup, encryption, deduplication, erasure coding, 3-2-1
+
+![Research metrics](docs/research_metrics.png)
+
 ## Architecture
 
 ```mermaid
