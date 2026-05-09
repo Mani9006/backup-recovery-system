@@ -294,3 +294,40 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 - The `croniter` library for reliable cron expression evaluation
 - The `cryptography` library for secure encryption primitives
 - Python's `tarfile` and `zipfile` modules for archive handling
+
+---
+
+<!-- showcase:start -->
+
+## Architecture
+
+```mermaid
+flowchart LR
+    A[Backup Scheduler<br/>croniter] --> B[Source Files]
+    B --> C[Compressor]
+    C --> D[AES-256 Encryptor]
+    D --> E1[(Local Storage)]
+    D --> E2[(Cloud Storage)]
+    F[Recovery CLI] --> E1 & E2
+    F --> G[Decryptor]
+    G --> H[Restored Files]
+```
+
+## Test Results
+
+![Test results](docs/test_results.png)
+
+**98 passing**, **0 failing**, **0 skipped** (total 98, framework: pytest)
+
+## References & Further Reading
+
+- NIST FIPS 197 (2001). *Advanced Encryption Standard (AES).* [↗](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf)
+- 3-2-1 Backup Strategy — US-CERT guidance. None [↗](https://www.cisa.gov/news-events/news/data-backup-options)
+
+## Author
+
+**Manikanta Reddy Mandadhi** — Senior Data Scientist (RAG / Agentic AI)
+
+GitHub: [@Mani9006](https://github.com/Mani9006/backup-recovery-system) · LinkedIn: [reddy1999](https://www.linkedin.com/in/reddy1999) · Portfolio: [manikantabio.com](https://www.manikantabio.com)
+
+<!-- showcase:end -->

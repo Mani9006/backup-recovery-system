@@ -1,0 +1,9 @@
+flowchart LR
+    A[Backup Scheduler<br/>croniter] --> B[Source Files]
+    B --> C[Compressor]
+    C --> D[AES-256 Encryptor]
+    D --> E1[(Local Storage)]
+    D --> E2[(Cloud Storage)]
+    F[Recovery CLI] --> E1 & E2
+    F --> G[Decryptor]
+    G --> H[Restored Files]
